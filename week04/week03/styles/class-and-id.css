@@ -10,6 +10,8 @@ h1 {
     padding-bottom: 0;
 }
 
+
+
 p {
     margin: 0;
 }
@@ -26,12 +28,13 @@ code {
     margin: 20px 0;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 10px;
-    background-color: #ddd;
-    /* this is shorthand for #dddddd */
+    background-color: #ddd; /* this is shorthand for #dddddd */
 }
 
 .highlight {
-    background-color: gold;
+    background-color: #efefaa;
+    border-radius: 25px;
+    padding: 25px;
 }
 
 /* ID examples - should be unique */
@@ -52,3 +55,4 @@ code {
     border-radius: 20px;
     padding: 20px
 }
+
