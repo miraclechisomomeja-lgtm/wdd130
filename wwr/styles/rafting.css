@@ -82,7 +82,7 @@ h1 {
     top: 80px;
     left: 30px;
     right: 30px;
-    background-color: #e9c46a;
+    background-color: var(--accent2-color);
     opacity: 0.9;
 
 }
