@@ -150,7 +150,7 @@ footer .socialmedia {
 
 .about-hero h1 {
     position: absolute;
-    top: 5px;
+    top: -9px;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -670,12 +670,17 @@ h1 {
     width: 100%;
     margin: 0;
     padding: 0;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    width: 80%;
+    background-color: rgba(12, 25, 37, 0.75);
+    max-width: 90%;
+    font-weight: bold;
+    padding: 2rem 2.5rem;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .hero-text h1 {
