@@ -225,7 +225,12 @@ footer .socialmedia {
 }
 
 /* ---- Two-column layout: map left, form right ---- */
-.contact-main {
+.contact-main h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-flex {
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
@@ -268,13 +273,14 @@ footer .socialmedia {
    so Name, Email, and Message Purpose all line up.
    140px covers the widest label ("Message Purpose:") plus room. */
 .field-name label,
-.field-email label,
-.field-purpose-label {
+.field-email label {
     display: inline-block;
     width: 100px;
     flex-shrink: 0;
     text-align: left;
     font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
 
 /* ---- Name row ---- */
@@ -305,19 +311,32 @@ footer .socialmedia {
     font-size: 1em;
 }
 
+.field-purpose-label {
+    float: left;
+    width: 100px;
+    text-align: left;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
 /* ---- Message Purpose row ---- */
 .field-purpose {
     display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    margin-bottom: 1px;
+    align-items: center;
+    gap: 45px;
+    margin: 0 0 1px 0;
+    padding: 0;
+    border: none;
 }
 
 .purpose-options {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+
 }
 
 .purpose-option {
@@ -375,7 +394,7 @@ footer .socialmedia {
     color: #ffffff;
     border: none;
     border-radius: 6px;
-    padding: 10px 160px;
+    padding: 10px 100px;
     font-size: 1.0em;
     cursor: pointer;
     width: 100%;
@@ -565,20 +584,42 @@ h1 {
 
 .trip-descriptions article {
     background-color: #f8f8f8;
-    padding: 1rem;
     border-radius: 10px;
-    text-align: center;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-descriptions article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
 }
 
 .trip-descriptions img {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 8px;
+    display: block;
 }
 
 .trip-descriptions h2 {
-    margin: 1rem;
+    margin: 1rem 1.25rem 0.5rem;
+    font-size: 1.25rem;
+}
+
+.trip-descriptions article p {
+    margin: 0 1.25rem 1.25rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+@media (max-width: 700px) {
+    .trip-descriptions {
+        grid-template-columns: 1fr;
+    }
 }
 
 .trip-table {
@@ -601,9 +642,9 @@ h1 {
 
 .trip-table th,
 .trip-table td {
-    border: 1px solid#ccc;
+    border: 1px solid #ccc;
     padding: 12px;
-    text-align: center;
+    text-align: left;
 }
 
 .trip-table th {
@@ -614,17 +655,30 @@ h1 {
     letter-spacing: 0.03em;
 }
 
+.trip-table table {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
 .trip-table tr:nth-child(even) {
     background-color: #f4f4f4;
 }
 
+.trip-table tbody tr:hover {
+    background-color: #e8e8e8;
+}
+
 .trip-table td:first-child {
-    text-align: left;
     font-weight: bold;
 }
 
-.trip-table th:first-child {
-    text-align: left;
+@media (max-width: 700px) {
+    .trip-table table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 }
 
 .home-main {
