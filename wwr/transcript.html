@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYU Transcript Page</title>
+    <link rel="stylesheet" href="styles/transcript.css">
+
+<body>
+    <div class="whole-form">
+        <form>
+            <h1>Order Official Transcript</h1>
+            <h2>What is the Difference Between an Official Transcript vs.an Unofficial
+                Transcript-and Which One is the Best for You</h2>
+            <div class="transcript-definition">
+                <ul>
+                    <li>An official transcript is considered official only when it is sent
+                        directly to the final recipient (such as a school, employer, or
+                        organization). Once it is delivered to a student or accessed by
+                        anyone other than the intended recipient, it is no longer official. If
+                        you need a transcript for a school, organization, or employment,
+                        request an official transcript and provide the recipient's correct
+                        email or mailing address.
+                    </li>
+
+                    <li>
+                        An unofficial transcript contains the same academic information
+                        as an official transcript and is free to access. It is intended
+                        for personal review or record-keeping and can be viewed or printed
+                        through your student portal.
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="second-paragraph">
+                <p>Please only complete this form if you need an official transcript.
+                    If you do not need an official transcript, you may access your unofficial
+                    transcript directly through the student portal.
+                </p>
+
+                <p>BYU-Pathway Worldwide will cover the cost of the first two official
+                    transcript requests for each institution:
+                </p>
+                <ul>
+                    <li>BYU-Pathway Worldwide</li>
+                    <li>BYU-Idaho</li>
+                    <li>Ensign College</li>
+                </ul>
+                <p>Additional official transcript requests may be subject to a fee. Students
+                    are encouraged to plan accordingly. Students may view their unofficial
+                    transcript at no cost through their student portal.
+                </p>
+            </div>
+
+            <div class="form-row dropdown-row">
+                <label for="q1">* From which institution are you requesting your transcript?</label>
+                <select id="q1" name="q1" required>
+                    <option value="" hidden>Select One</option>
+                    <option value="BYU-Pathway Worldwide">BYU-Pathway Worldwide</option>
+                    <option value="BYU-Idaho">BYU-Idaho</option>
+                    <option value="Ensign College">Ensign College</option>
+                </select>
+            </div>
+
+
+            <div class="form-row">
+                <label for="q2">* Name of institution, group, or person receiving this
+                    transcript?</label>
+                <input type="text" id="q2" name="q2" placeholder="Ensign College" required>
+            </div>
+
+            <div class="form-row">
+                <label for="email">* Enter the Email of the recipient that should receive your
+                    official
+                    transcript</label>
+                <input type="email" id="email" name="email" placeholder="john.smith@email.com">
+            </div>
+
+            <div class="checkbox1">
+                <input type="checkbox" id="checkbox1" name="checkbox1">
+                <label for="checkbox1">I understand that BYU-Pathway Worldwide processes
+                    transcript requests as they are received and does not hold or
+                    delay them until grades are posted.
+                </label>
+            </div>
+
+            <div class="checkbox2">
+                <input type="checkbox" id="checkbox2" name="checkbox2">
+                <label for="checkbox2">I understand that additional official transcript requests may
+                    be
+                    subject to a fee. Students are encouraged to plan accordingly.</label>
+
+            </div>
+
+            <div class="asterisk">
+                <p>Fields marked with an asterisk (*) are required</p>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -9,6 +9,7 @@
     content="Get in touch with White Water Rafting Company. Find address, phone number and email, meet with our team, or send us a message using our contact form.">
   <meta name="author" content="Miracle Chisom Omeja">
   <link rel="stylesheet" href="styles/rafting.css">
+  <script src="scripts/rafting.js" defer></script>
 
 
 </head>
@@ -16,7 +17,12 @@
 <body>
   <header>
     <img src="images/rafting-site-logo.png" alt="Rafting Logo">
-    <nav>
+
+    <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
@@ -50,54 +56,54 @@
         <div class="contact-form">
           <form action="#" method="post">
 
-          <div class="field-name">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Placeholder" required>
-          </div>
-
-          <div class="field-email">
-            <label for="email-address">Email:</label>
-            <input type="email" id="email-address" name="email-address" placeholder="Placeholder"
-              required>
-          </div>
-
-          <fieldset class="field-purpose">
-            <legend class="field-purpose-label">Message Purpose:</legend>
-
-            <div class="purpose-options">
-              <div class="purpose-option">
-                <input type="radio" id="general" name="purpose" value="general">
-                <label for="general">General Inquiry</label>
-              </div>
-
-              <div class="purpose-option">
-                <input type="radio" id="reservation" name="purpose" value="reservation">
-                <label for="reservation">Reservation Question</label>
-              </div>
-
-              <div class="purpose-option">
-                <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                <label for="suggestion">Website Suggestion</label>
-              </div>
+            <div class="field-name">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Placeholder" required>
             </div>
-          </fieldset>
 
-          <div class="field-message">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Type here"
-              required></textarea>
-          </div>
+            <div class="field-email">
+              <label for="email-address">Email:</label>
+              <input type="email" id="email-address" name="email-address" placeholder="Placeholder"
+                required>
+            </div>
 
-          <div class="field-subscribe">
-            <input type="checkbox" id="newsletter" name="newsletter">
-            <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-          </div>
+            <fieldset class="field-purpose">
+              <legend class="field-purpose-label">Message Purpose:</legend>
 
-          <div class="field-submit">
-            <button type="submit">Send Message</button>
-          </div>
+              <div class="purpose-options">
+                <div class="purpose-option">
+                  <input type="radio" id="general" name="purpose" value="general">
+                  <label for="general">General Inquiry</label>
+                </div>
 
-        </form>
+                <div class="purpose-option">
+                  <input type="radio" id="reservation" name="purpose" value="reservation">
+                  <label for="reservation">Reservation Question</label>
+                </div>
+
+                <div class="purpose-option">
+                  <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                  <label for="suggestion">Website Suggestion</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="field-message">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" placeholder="Type here"
+                required></textarea>
+            </div>
+
+            <div class="field-subscribe">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+            </div>
+
+            <div class="field-submit">
+              <button type="submit">Send Message</button>
+            </div>
+
+          </form>
         </div>
       </div>
 

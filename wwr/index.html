@@ -9,6 +9,7 @@
       content="Experience exciting white water rafting adventures with White water Rafting Company.">
     <meta name="author" content="Miracle Chisom Omeja">
     <link rel="stylesheet" href="styles/rafting.css">
+    <script src="scripts/rafting.js" defer></script>
 
 
 </head>
@@ -16,7 +17,12 @@
 <body class="home-page">
     <header>
         <img src="images/rafting-site-logo.png" alt="Rafting Logo">
-        <nav>
+
+        <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
@@ -29,7 +35,7 @@
             <div class="hero-text">
                 <h1> Experience the Adventure</h1>
                 <p>Explore thrilling white water rafting trips with our experienced guides</p>
-                <a href="trips.html" class="btn">Explore Our Trips</a>
+                <a href="trips.html" class="btn" id="exploreTrips">Explore Our Trips</a>
             </div>
         </section>
 

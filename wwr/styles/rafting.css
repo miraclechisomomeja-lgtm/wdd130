@@ -616,12 +616,6 @@ h1 {
     color: #333;
 }
 
-@media (max-width: 700px) {
-    .trip-descriptions {
-        grid-template-columns: 1fr;
-    }
-}
-
 .trip-table {
     margin: 3rem 0;
 }
@@ -671,14 +665,6 @@ h1 {
 
 .trip-table td:first-child {
     font-weight: bold;
-}
-
-@media (max-width: 700px) {
-    .trip-table table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
 }
 
 .home-main {
@@ -755,4 +741,95 @@ h1 {
 
 .btn:hover {
     background-color: var(--accent2-color);
+}
+
+#menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr auto;
+    }
+
+    header nav {
+        display: none;
+        grid-column: 1/-1;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header nav.open {
+        display: flex;
+    }
+
+    #menu-button {
+        display: block;
+        justify-self: end;
+    }
+
+    .trip-descriptions {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-flex {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .employee-grid {
+        gap: 20px;
+    }
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 3rem auto;
+        max-width: 1200px;
+    }
+
+    .map-container {
+        width: 450px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer p {
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+
+    .employee-grid {
+        gap: 15px;
+    }
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 3rem auto;
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 767px) {
+    .trip-table table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 }
