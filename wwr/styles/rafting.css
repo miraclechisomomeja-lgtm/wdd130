@@ -758,6 +758,20 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
+    
+    header,
+    main,
+    footer {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    main > section,
+    main > article {
+        max-width: 100%;
+    }
 
     header nav {
         width: 100%;
@@ -824,6 +838,27 @@ h1 {
         max-width: 100%;
         margin: 0;
     }
+}
+
+/* Prevent horizontal scrolling across the website */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+/* Keep page elements within the available width */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 @media screen and (min-width: 600px) and (max-width: 767px) {
