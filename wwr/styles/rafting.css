@@ -63,6 +63,10 @@ article {
     padding: 8px;
 }
 
+header nav {
+    margin: 0;
+}
+
 .socialmedia {
     display: flex;
     gap: 10px;
