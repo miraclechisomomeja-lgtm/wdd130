@@ -850,6 +850,19 @@ h1 {
         max-width: 100%;
         margin: 0;
     }
+    .history {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 220px;
+    }
+
+    .about-hero article {
+        top: 245px;
+    }
+    
+
 }
 
 /* Prevent horizontal scrolling across the website */
