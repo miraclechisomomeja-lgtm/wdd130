@@ -865,27 +865,6 @@ h1 {
 
 }
 
-/* Prevent horizontal scrolling across the website */
-html,
-body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: clip;
-}
-
-/* Keep page elements within the available width */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Make images responsive */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 @media screen and (min-width: 600px) and (max-width: 767px) {
 
     .employee-grid {
