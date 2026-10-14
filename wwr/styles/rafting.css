@@ -774,6 +774,14 @@ h1 {
         gap: 10px;
     }
 
+    header,
+    main,
+    footer {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
     header nav.open {
         display: flex;
     }
