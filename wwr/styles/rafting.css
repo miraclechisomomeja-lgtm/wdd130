@@ -662,16 +662,6 @@ h1 {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
 
-/* Allow the table to scroll horizontally when necessary */
-
-@media screen and (min-width: 767px) {
-    .trip-table table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-}
-
 .trip-table tr:nth-child(even) {
     background-color: #f4f4f4;
 }
@@ -770,20 +760,6 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-    
-    header,
-    main,
-    footer {
-        width: 100%;
-        max-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    
-    main > section,
-    main > article {
-        max-width: 100%;
-    }
 
     header nav {
         width: 100%;
