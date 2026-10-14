@@ -755,10 +755,16 @@ h1 {
 
 @media screen and (max-width: 600px) {
     header {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 1rem;
+        box-sizing: border-box;
         grid-template-columns: 1fr auto;
     }
 
     header nav {
+        width: 100%;
         display: none;
         grid-column: 1/-1;
         flex-direction: column;
@@ -797,11 +803,12 @@ h1 {
         max-width: 1200px;
     }
 
-    .map-container {
-        width: 450px;
-    }
-
     footer {
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+        margin: 0;
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
     }
@@ -811,13 +818,6 @@ h1 {
         font-size: 1.2rem;
     }
 
-    .contact-page header,
-    .contact main,
-    .contact-page footer {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 767px) {
