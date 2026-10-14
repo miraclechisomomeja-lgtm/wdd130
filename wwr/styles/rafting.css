@@ -93,7 +93,7 @@ footer {
 header,
 footer {
     width: 100%;
-    max-width: none;
+    max-width: 100%;;
     margin: 0;
 }
 .home-page main {
@@ -811,12 +811,6 @@ h1 {
     }
     .about-hero article {
         top: 245px;
-    }
-
-    main {
-        width: 100%;
-        max-width: none;
-        margin: 0;
     }
 
     footer {
