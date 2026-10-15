@@ -824,6 +824,21 @@ h1 {
     .about-hero article {
         top: 245px;
     }
+
+    .adventures {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .adventures figure {
+        text-align: center;
+    }
+    
+    .adventures img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
     
 
 }
