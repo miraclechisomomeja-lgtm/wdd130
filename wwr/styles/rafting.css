@@ -843,6 +843,13 @@ h1 {
     .adventures h2 {
         text-align: center;
     }
+
+    .contact-page header,
+    .contact-page footer {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
     
 
 }
