@@ -93,7 +93,7 @@ footer {
 header,
 footer {
     width: 100%;
-    max-width: 870px;
+    max-width: 100%;
     margin: 0;
 }
 
