@@ -86,7 +86,7 @@ header,
 main,
 footer {
     width: 100%;
-    max-width: 840px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -742,7 +742,6 @@ h1 {
 }
 
 .contact-page header,
-.contact-page main,
 .contact-page footer {
     width: 100%;
     max-width: 100%;
