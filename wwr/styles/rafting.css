@@ -788,6 +788,9 @@ h1 {
     .trip-descriptions {
         grid-template-columns: 1fr;
     }
+    .trip-table table {
+        width: 80%;
+    }
 
     .contact-flex {
         display: flex;
