@@ -813,7 +813,13 @@ h1 {
         flex-direction: column;
         gap: 1rem;
         align-items: center;
-        margin-top: 220px;
+        margin-top: 230px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .history img {
+        border-radius: 10px;
     }
 
     .about-hero article {
