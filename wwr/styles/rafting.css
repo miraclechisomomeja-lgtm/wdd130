@@ -858,9 +858,32 @@ h1 {
         max-width: 100%;
         margin: 0;
     }
+    
     .contact-form {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        gap: 1rem;
+    }
+    .field-name label,
+    .field-email label {
+        text-align: left;
+        font-weight: bold;
+    }
+    .field-name input[type="text"],
+    .field-email input[type="email"] {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    .contact-form button {
+        padding: 0.75rem;
+        background-color: var(--accent3-color);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
     }
     
 
