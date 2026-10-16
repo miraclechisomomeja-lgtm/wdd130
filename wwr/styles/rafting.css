@@ -836,6 +836,7 @@ h1 {
     
     .adventures figure {
         text-align: center;
+        gap: 20px;
     }
     
     .adventures img {
