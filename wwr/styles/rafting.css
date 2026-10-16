@@ -807,10 +807,6 @@ h1 {
         max-width: 1200px;
     }
 
-    .map-container {
-        width: 350px;
-    }
-
     
     .history {
         display: flex;
