@@ -858,6 +858,10 @@ h1 {
         max-width: 100%;
         margin: 0;
     }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+    }
     
 
 }
