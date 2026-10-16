@@ -859,16 +859,7 @@ h1 {
         margin: 0;
     }
     
-    .contact-form {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    .field-name label,
-    .field-email label {
-        text-align: left;
-        font-weight: bold;
-    }
+    
     .field-name input[type="text"],
     .field-email input[type="email"] {
         width: 100%;
