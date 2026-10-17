@@ -792,7 +792,12 @@ h1 {
         margin: 2rem 0;
     }
     .trip-table table {
-        width: 200px;
+        width: 250px;
+    }
+    .trip-table th,
+    .trip-table td {
+        padding: 8px;
+        font-size: 0.6rem;
     }
 
     .contact-flex {
