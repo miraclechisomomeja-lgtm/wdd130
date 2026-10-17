@@ -789,7 +789,7 @@ h1 {
         grid-template-columns: 1fr;
     }
     .trip-table table {
-        width: 270px;
+        width: 200px;
     }
 
     .contact-flex {
