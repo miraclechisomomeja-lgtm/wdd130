@@ -792,12 +792,14 @@ h1 {
         margin: 2rem 0;
     }
     .trip-table table {
-        width: 240px;
+        width: 95%;
+        margin: 0 auto;
+        border-collapse: collapse;
     }
     .trip-table th,
     .trip-table td {
         padding: 8px;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .contact-flex {
