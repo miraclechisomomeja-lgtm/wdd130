@@ -788,6 +788,9 @@ h1 {
     .trip-descriptions {
         grid-template-columns: 1fr;
     }
+    .trip-table {
+        margin: 2rem 0;
+    }
     .trip-table table {
         width: 200px;
     }
